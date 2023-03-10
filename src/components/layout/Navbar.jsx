@@ -9,7 +9,7 @@ function Navbar({title}) {
         <div className="flex-none px2 mx2">
           <GiSpy className='inline pr-2 text-3xl'/>
           <Link to='/' className='text-lg font-bold align-middle'>
-            {title} - Staging
+            {title}
           </Link>
         </div>
 
@@ -29,7 +29,7 @@ function Navbar({title}) {
 }
 
 Navbar.defaultProps = {
-  title: 'GitHub Tracker',
+  title: 'GitHub Tracker - Staging',
 }
 
 Navbar.propTypes = {
