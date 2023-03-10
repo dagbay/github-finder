@@ -9,7 +9,7 @@ function Navbar({title}) {
         <div className="flex-none px2 mx2">
           <GiSpy className='inline pr-2 text-3xl'/>
           <Link to='/' className='text-lg font-bold align-middle'>
-            {title}
+            {title} - Staging
           </Link>
         </div>
 
