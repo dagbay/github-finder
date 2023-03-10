@@ -85,15 +85,17 @@ function User() {
                 )}
               </h1>
               <div className="divider"></div>
-              <div className="w-full rounded-lg shadow-md bg-base-100 stats">
-                <div className="stat">
-                  <div className="stat-title text-md">Bio</div>
-                  <div className="divider mt-0 mb-1"></div>
-                  <div className="text-sm stat-value">
-                    {bio}
+              {bio && (
+                <div className="w-full rounded-lg shadow-md bg-base-100 stats">
+                  <div className="stat">
+                    <div className="stat-title text-md">Bio</div>
+                    <div className="divider mt-0 mb-1"></div>
+                    <div className="text-sm stat-value">
+                      {bio}
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
             <div className="w-full rounded-lg shadow-md bg-base-100 stats">
               {location && (
