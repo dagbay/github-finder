@@ -81,16 +81,17 @@ function User() {
             <div className="mb-6">
               <h1 className="text-3xl card-title">
                 {name}
-                <div className="ml-2 mr-1 badge badge-success">
-                  {type}
-                </div>
-                {hireable && (
-                  <div className="mx-1 badge badge-info">
-                    Hireable
-                  </div>
-                )}
               </h1>
-              <div className="divider"></div>
+              <div className="mr-1 badge badge-success">
+                {type}
+              </div>
+              {hireable && (
+                <div className="mb-1 badge badge-info">
+                  Hireable
+                </div>
+              )}
+
+              <div className="mt-0 divider"></div>
               {bio && (
                 <div className="w-full rounded-lg shadow-md bg-base-100 stats">
                   <div className="stat">
