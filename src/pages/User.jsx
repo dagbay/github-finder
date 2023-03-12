@@ -96,8 +96,8 @@ function User() {
                   <div className="stat">
                     <div className="stat-title text-md">Bio</div>
                     <div className="divider mt-0 mb-1"></div>
-                    <div className="text-sm stat-value">
-                      {bio}
+                    <div className="stat-description">
+                      <p>{bio}</p>
                     </div>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ function User() {
                 <div className="stat">
                   <div className="stat-title text-md">Location</div>
                   <div className="divider mt-0 mb-1"></div>
-                  <div className="text-lg stat-value">
+                  <div className="text-lg stat-description">
                     {location}
                   </div>
                 </div>
@@ -117,7 +117,7 @@ function User() {
                 <div className="stat">
                   <div className="stat-title text-md">Website</div>
                   <div className="divider mt-0 mb-1"></div>
-                  <div className="text-lg stat-value">
+                  <div className="text-lg stat-description">
                     <a href={`https://${blog}`} target='_blank' rel='noreferrer' className='link link-hover'>
                       {blog}
                     </a>
@@ -128,7 +128,7 @@ function User() {
                 <div className="stat">
                   <div className="stat-title text-md">Twitter</div>
                   <div className="divider mt-0 mb-1"></div>
-                  <div className="text-lg stat-value">
+                  <div className="text-lg stat-description">
                     <a href={`https://twitter.com/${twitter_username}`} target='_blank' rel='noreferrer' className='link link-hover'>
                       {twitter_username}
                     </a>
