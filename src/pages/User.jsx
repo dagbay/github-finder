@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet"
 import { FaCodepen, FaStore, FaUserFriends, FaUsers, FaGithub } from 'react-icons/fa'
 import { useContext, useEffect } from "react"
 import { Link } from 'react-router-dom'
@@ -50,6 +51,11 @@ function User() {
 
   return (
     <>
+      {login && (
+        <Helmet>
+          <title>GitHub Tracker | {`${login}`}</title>
+        </Helmet>
+      )}
       <div className="w-full mx-auto lg:w-10/12">
         <div className="mb-4">
           <Link to='/' className='btn btn-ghost'>Back to Search</Link>
