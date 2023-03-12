@@ -30,6 +30,10 @@ function UserSearch() {
 
       setText('')
     }
+
+    if (users.length === 0 ) {
+      setAlert('No users were found', 'error')
+    }
   }
 
   return (
